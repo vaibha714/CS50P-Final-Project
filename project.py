@@ -2,7 +2,7 @@ import yfinance as yf
 from tabulate import tabulate
 
 
-CLEAR = "\033[H\033[J"
+CLEAR = "\033[H\033[J" #clears terminal screen every time the function is called
 
 def one_stock(output):
     try:
@@ -83,7 +83,7 @@ def log_to_prices():
                 collection = {"Ticker": ticker, "Price": f"${price}"}
                 box.append(collection)
                 print("\n")
-                print(CLEAR + tabulate(box, headers="keys",tablefmt="grid"))
+                print(CLEAR + tabulate(box, headers="keys",tablefmt="grid")) #turns the list of dictionaries into a table
          else:
              print("No Tickers in Log")
 
@@ -92,7 +92,7 @@ def is_variable_in_file(var, file_name):
         content = file.read()
     return var in content
 
-def unpacking(words):
+def unpacking(words): #removes \n from the list of words
     return [word.strip() for word in words]
 
 def main():
