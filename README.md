@@ -2,6 +2,8 @@
 
 Terminal based watch list for stocks. Users can add, remove, and view their watchlist. With real-time data from yfinance, users can also view the current price of any stock or the current prices of all the stocks on the watchlist. 
 
+Wanted_Stocks.txt contains your watchlist and updates as you add or remove from your watchlist. 
+
 
 ## ✨ Features
 * Real-time stock data
